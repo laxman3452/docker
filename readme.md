@@ -7,7 +7,9 @@ docker run -it ubuntu
 **3) Understanding images and containers in docker.**
 
 docker container ls
+
 docker container ls -a
+
 docker exec -it pedantic_mendal bash
 
 **4) Running ubunti image in container.**
@@ -37,11 +39,13 @@ a)Bridge -- need port mapping
 b)Host   -- doesn't need port mapping
 
 docker network inspect bridge
+
 run containers to see which container using bridge networking
 
 docker network ls
 
 docker run -it --network=host busybox
+
 to make busybox run in host network i.e no need to do port mapping explicitly.
 
 **11) Volume Mounting --not destroy internal files even if container is destroyed.**
